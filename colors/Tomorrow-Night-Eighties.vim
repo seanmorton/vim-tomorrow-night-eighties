@@ -365,6 +365,14 @@ if has("gui_running") || &t_Co == 88 || &t_Co == 256
 	call <SID>X("diffAdded", s:green, "", "")
 	call <SID>X("diffRemoved", s:red, "", "")
 
+	" FZF Highlighting
+	call <SID>X("fzfHighlight", s:yellow, "", "")
+	call <SID>X("fzfCurrLine", s:blue, s:window, "")
+	call <SID>X("fzfPointer", s:blue, "", "")
+	call <SID>X("fzfSpinner", s:yellow, "", "")
+	call <SID>X("fzfInfo", s:yellow, "", "")
+	call <SID>X("fzfPrompt", s:green, "", "")
+
 	" Delete Functions
 	delf <SID>X
 	delf <SID>rgb
