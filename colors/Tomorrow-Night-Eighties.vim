@@ -282,7 +282,7 @@ if has("gui_running") || &t_Co == 88 || &t_Co == 256
 	call <SID>X("Define", s:purple, "", "none")
 	call <SID>X("Include", s:blue, "", "")
 	call <SID>X("Label", s:green, "", "")
-	"call <SID>X("Ignore", "666666", "", "")
+	call <SID>X("SpellBad", s:foreground, s:red, "")
 
 	" Vim Highlighting
 	call <SID>X("vimCommand", s:red, "", "none")
