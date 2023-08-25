@@ -9,6 +9,7 @@ let s:selection = "515151"
 let s:foldbg= "313131"
 let s:line = "393939"
 let s:comment = "999999"
+let s:white = "ffffff"
 let s:red = "f2777a"
 let s:orange = "f99157"
 let s:yellow = "ffcc66"
@@ -282,7 +283,9 @@ if has("gui_running") || &t_Co == 88 || &t_Co == 256
 	call <SID>X("Define", s:purple, "", "none")
 	call <SID>X("Include", s:blue, "", "")
 	call <SID>X("Label", s:green, "", "")
-	call <SID>X("SpellBad", s:foreground, "", "")
+	call <SID>X("error", s:white, "", "")
+	call <SID>X("SpellBad", s:white, "", "")
+	call <SID>X("SpellCap", s:white, s:orange, "")
 
 	" Vim Highlighting
 	call <SID>X("vimCommand", s:red, "", "none")
