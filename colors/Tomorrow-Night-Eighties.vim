@@ -278,13 +278,13 @@ if has("gui_running") || &t_Co == 88 || &t_Co == 256
 	call <SID>X("String", s:green, "", "")
 	call <SID>X("Special", s:foreground, "", "")
 	call <SID>X("PreProc", s:purple, "", "")
-	call <SID>X("Operator", s:aqua, "", "none")
+	call <SID>X("Operator", s:blue, "", "none")
 	call <SID>X("Type", s:blue, "", "none")
 	call <SID>X("Define", s:purple, "", "none")
 	call <SID>X("Include", s:blue, "", "")
 	call <SID>X("Label", s:green, "", "")
 	call <SID>X("error", s:white, "", "")
-	call <SID>X("SpellBad", s:white, "", "")
+	call <SID>X("SpellBad", s:white, s:red, "")
 	call <SID>X("SpellCap", s:white, s:orange, "")
 
 	" Vim Highlighting
@@ -324,7 +324,7 @@ if has("gui_running") || &t_Co == 88 || &t_Co == 256
 	call <SID>X("pythonException", s:purple, "", "")
 	call <SID>X("pythonFunction", s:blue, "", "")
 
-	" Go Highlighting
+	" Go Highlighting (with vim-go-syntax)
 	call <SID>X("goStatement", s:purple, "", "")
 	call <SID>X("goConditional", s:purple, "", "")
 	call <SID>X("goRepeat", s:purple, "", "")
@@ -332,6 +332,11 @@ if has("gui_running") || &t_Co == 88 || &t_Co == 256
 	call <SID>X("goDeclaration", s:blue, "", "")
 	call <SID>X("goConstants", s:yellow, "", "")
 	call <SID>X("goBuiltins", s:orange, "", "")
+	call <SID>X("goFuncDecl", s:purple, "", "")
+	call <SID>X("goVarDecl", s:purple, "", "")
+	call <SID>X("goConstDecl", s:purple, "", "")
+	call <SID>X("goParam", s:orange, "", "")
+	call <SID>X("goKeywords", s:purple, "", "")
 
 	" CoffeeScript Highlighting
 	call <SID>X("coffeeKeyword", s:purple, "", "")
@@ -367,6 +372,10 @@ if has("gui_running") || &t_Co == 88 || &t_Co == 256
 	" Diff Highlighting
 	call <SID>X("diffAdded", s:green, "", "")
 	call <SID>X("diffRemoved", s:red, "", "")
+  hi DiffAdd    cterm=NONE gui=NONE guifg=NONE    guibg=#24462b
+	hi DiffChange cterm=NONE gui=NONE guifg=NONE    guibg=#3b3220
+  hi DiffText   cterm=NONE gui=NONE guifg=NONE    guibg=#8b6921
+	hi DiffDelete cterm=NONE gui=NONE guifg=#612f2c guibg=#612f2c
 
 	" FZF Highlighting
 	call <SID>X("fzfHighlight", s:yellow, "", "")
