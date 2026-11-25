@@ -1,4 +1,7 @@
-Ths is my own version of the [Tomorrow Night Eighties Theme](https://github.com/chriskempson/tomorrow-theme/blob/master/vim/colors/Tomorrow-Night-Eighties.vim) for Vim with a few tweaks & additions, like colors for FZF.
+Ths is my own version of the [Tomorrow Night Eighties Theme](https://github.com/chriskempson/tomorrow-theme/blob/master/vim/colors/Tomorrow-Night-Eighties.vim) for Vim with a few tweaks & additions:
+* vim-fzf colors
+* vim-go-syntax addtional Go colors
+* Diff highlighting similar to Github
 
 ## Installation with Pathogen
 ```
