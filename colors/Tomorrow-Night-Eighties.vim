@@ -373,9 +373,9 @@ if has("gui_running") || &t_Co == 88 || &t_Co == 256
 	call <SID>X("diffAdded", s:green, "", "")
 	call <SID>X("diffRemoved", s:red, "", "")
   hi DiffAdd    cterm=NONE gui=NONE guifg=NONE    guibg=#24462b
-	hi DiffChange cterm=NONE gui=NONE guifg=NONE    guibg=#3b3220
+  hi DiffChange cterm=NONE gui=NONE guifg=NONE    guibg=#3b3220
   hi DiffText   cterm=NONE gui=NONE guifg=NONE    guibg=#8b6921
-	hi DiffDelete cterm=NONE gui=NONE guifg=#612f2c guibg=#612f2c
+  hi DiffDelete cterm=NONE gui=NONE guifg=#612f2c guibg=#612f2c
 
 	" FZF Highlighting
 	call <SID>X("fzfHighlight", s:yellow, "", "")
